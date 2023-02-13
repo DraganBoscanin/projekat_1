@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&family=Roboto+Condensed:wght@400;700&display=swap');
+
+
+
+
+
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.15fr 1fr 4fr 12fr 3fr;
+    height: 150vh;
+
+}
+
+#container>footer {
+    row-gap: 0.1875rem;
+}
+
+header {
+    display: flex;
+   
+    text-transform: uppercase;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: linear-gradient(lightgrey, white);
+
+
+
+
+}
+
+
+header>h1 {
+    font-size: 3rem;
+    padding-left: 0.3125rem;
+
+
+}
+
+#sales {
+    color: red;
+}
+
+#repres {
+    color: black;
+}
+
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:#0d58edc1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-items: center;
+    padding-left: 0.625rem;
+
+
+
+}
+
+nav>a {
+    font-family: sans-serif;
+    margin-right: 1.5rem;
+    text-decoration: none;
+
+    color: white;
+    font-size: large;
+
+
+}
+
+
+#banner {
+    background-image: url(./banner/sales.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-left: 0.625rem;
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column: 1/3;
+    column-gap: 0.3125rem;
+
+}
+
+
+#main_header {
+    padding: 0.3125rem;
+}
+
+
+
+section {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+
+}
+
+section>h1 {
+   
+    padding-left: 0.3125rem;
+}
+
+
+aside {
+    
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+
+
+footer {
+    display: flex;
+    background-color: rgb(242, 237, 237);
+    color: black;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 0.3125rem 0.3125rem;
+}
+
+
+
+
+#art {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+   
+
+
+}
+
+#art1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 0.9375rem;
+    column-gap: 0.9375rem;
+    margin-left: 0.9375rem;
+    margin-bottom: 0.9375rem;
+}
+
+#art2 {
+    border: 1px solid lightgray;
+    margin-left: 0.9375rem;
+    color:green;
+}
+
+#box1{
+    background-image: url(./image/Nectar-logo-min.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+   
+
+
+}
+
+#box2 {
+    background-image: url(./image/atlantic-grupa-logo-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+
+}
+
+#box3 {
+    background-image: url(./image/coca-cola-logo-png-transparent-5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#box4 {
+    background-image: url(./image/Nelt.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+#box5 {
+    background-image: url(./image/carlsberg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+#box6 {
+    background-image: url(./image/logo@2x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#box7 {
+    background-image: url(./image/logo_header.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#box8 {
+    background-image: url(./image/Marbo_Product_logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+ 
+}
+
+#box9 {
+    background-image: url(./image/knjazmilosad_logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+#social_media{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+   
+}
+
+.box {
+    border: 1px solid lightgrey;
+    border-radius: 0.3125rem;
+
+
+
+}
+
+.box:hover {
+    transform: translate(-0.625rem, 0.625rem);
+    box-shadow: 0.75rem -0.75rem lightgray;
+    cursor: pointer;
+}
+
+   .social_icon {
+    background-color: rgb(96, 96, 243);
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    vertical-align: center;
+    border-radius: 0.3125rem;
+}
+.social_icon> i {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+#newsletter_form {
+    display: flex;
+    margin-bottom:2.1875rem;
+
+}
+#newsletter_form>input {
+    flex-basis: 80%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: #424242;
+    color: white;
+    padding: 0.3125rem;
+
+}
+#newsletter_form>button {
+    width: 6.25rem;
+    margin-left: 0.3125rem;
+    background-color: #D32F2F;
+    border: 1px solid lightgray;
+    color: white;
+    padding: 0.3125rem;
+    
+}
+.sponsor>img {
+    width: 6.25rem;
+}
+#sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+.aside_header {
+    background-color:#D32F2F;
+    padding: 0.3125rem;
+    color: white;
+    letter-spacing: 0.125rem;
+    font-size: 1.75rem;
+   
+    margin-bottom:1.875rem;
+    font-weight: normal;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+@media all and (max-width:480px) {
+    main{
+        display: block;
+        justify-content: center;
+        
+    }
+    header>h1{
+        font-size: 1.5rem;
+    }
+    .aside_header{
+        font-size: 1rem;
+    }
+    .aside_header{
+        font-size: 1rem;
+    }
+    nav>a{
+        font-size: 0.5rem;
+    }
+}
